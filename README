@@ -1,4 +1,7 @@
-* Euler Project
-  My attempts at solving [[http://projecteuler.net/][Euler]] problems. I will be attempting
-  the solutions in [[http://clojure.org/][Clojure]] and [[http://haskell.org/][Haskell]] as an attempt to learn
-  them. May eventually try solving them in [[http://www.python.org/][Python]] and [[http://www.cppreference.com/wiki/][C++]].
+h1. Euler Project
+
+My attempts at solving "Euler":http://projecteuler.net/ problems.
+I will be attempting the solutions in "Clojure":http://clojure.org/
+and "Haskell":http://haskell.org/ as an attempt to learn them.
+May eventually try solving them in "Python":http://www.python.org/
+and "C++":http://www.cppreference.com/wiki/.
