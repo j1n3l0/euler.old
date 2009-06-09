@@ -6,8 +6,8 @@
     (unchecked-divide
      (* n (* p (+ p 1))) 2)))
 
-;; Make this more generic
-(println
+;; Elapsed time: 1.629 msecs
+(time
  (- (+ (sum-divisible-by 3 999)
        (sum-divisible-by 5 999))
     (sum-divisible-by 15 999)))
