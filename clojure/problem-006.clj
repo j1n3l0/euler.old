@@ -20,3 +20,20 @@
 
 ;; "Elapsed time: 1.891 msecs"
 ;; 25164150
+
+;; http://projecteuler.net/index.php?section=forum&id=6
+;; (1 + 2 + ... + n)^2 = n^2 * (n+1)^2 * 1/4
+;; 1^2 + 2^2 + ... + n^2 = n * (n+1) * (2n+1) * 1/6
+;; Thus easily applicable to any n.
+
+(defn jonnys-solution
+  "Jonny's solution to problem 006"
+  [n]
+  (let [sq (fn [n] (* n n))]
+    (- (unchecked-divide (* (sq n) (sq (+ n 1))) 4)
+       (unchecked-divide (* n (+ n 1) (+ 1 (* 2 n))) 6))))
+
+(time (jonnys-solution 100))
+
+;; "Elapsed time: 0.287 msecs"
+;; 25164150
