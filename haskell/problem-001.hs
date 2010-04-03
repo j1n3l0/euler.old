@@ -5,13 +5,10 @@
 -- Find the sum of all the multiples of 3 or 5 below 1000.
 -- See http://projecteuler.net/index.php?section=problems&id=1
 
-sumOfMultiples :: Int -> Int -> Int
+-- euler problem 001
+sumDivisibleBy n = n * ( p * ( p + 1) ) `div` 2
+    where
+        p      = target `div` n
+        target = 999
 
-sumOfMultiples n t = 
-
-{-- 
-Function SumDivisibleBy(n)
-  p = target div n
-  return n*(p*(p+1)) div 2
-EndFunction
---}
+problem_001 = sumDivisibleBy 3 + sumDivisibleBy 5 - sumDivisibleBy 15
